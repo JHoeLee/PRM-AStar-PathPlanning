@@ -4,8 +4,12 @@ Hi! This is a path planning project for Eureka Robotics take-home technical asse
 
 ## How to Use
 
+### Installation and Setup
     git clone https://github.com/JHoeLee/PRM-AStar-PathPlanning.git
     cd pathplanning\osr_course_pkgs\osr_examples\scripts
+    pip install -r requirements.txt
+
+### Run the code
     python PathPlanning.py --num_samples 3000 --connection_radius 0.5 --seed 12345
 
 ## Framework
