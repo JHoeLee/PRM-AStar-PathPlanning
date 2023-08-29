@@ -6,7 +6,7 @@ Hi! This is a path planning project for Eureka Robotics take-home technical asse
 
 ### Installation and Setup
     git clone https://github.com/JHoeLee/PRM-AStar-PathPlanning.git
-    cd pathplanning
+    cd PRM-AStar-PathPlanning
     pip install -r requirements.txt
 
 ### Run the code
