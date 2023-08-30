@@ -1,6 +1,6 @@
 # PRM-AStar-PathPlanning
 ## Introduction
-Hi! This is a path planning project for Eureka Robotics take-home technical assessment. The goal is to create a Probability Roadmap (PRM) in an enclosed 2D environment, perform A* Search to find optimal path to goal, and post-process the path to reduce the overall cost.
+This is a path-planning project, in which the goal is to create a Probability Roadmap (PRM) in an enclosed 2D environment, perform A* Search to find optimal path to goal, and post-process the path to reduce the overall cost.
 
 ## How to Use
 
