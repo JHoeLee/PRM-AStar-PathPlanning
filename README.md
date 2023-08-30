@@ -24,7 +24,7 @@ Nearest neighbours of each node within a specified radius (**default connection_
 ![image](https://github.com/JHoeLee/PRM-AStar-PathPlanning/assets/111511618/228c4de2-fffe-4cee-95f6-b2c6e5d43474)
 
 ### Step 3: Perform A* Search
-Heuristic cost is the distance between each node and the goal. Node with the lowest f-score(distance so far(g-score) + heuristic) is selected as current node. For each neighbour, if tentative g_score is lower than current g-score of neighbour, the neighbour is pushed into the open set with its updated f-score. When the current node is the goal node, the optimal path is reconstructed. Default seed = 4, change its value to see other environments.
+Heuristic cost is the distance between each node and the goal. Node with the lowest f-score(distance so far(g-score) + heuristic) is selected as current node. For each neighbour, if tentative g_score is lower than current g-score of neighbour, the neighbour is pushed into the open set with its updated f-score. When the current node is the goal node, the optimal path is reconstructed. **Default seed = 4**, change its value to see other environments.
 
 ![image](https://github.com/JHoeLee/PRM-AStar-PathPlanning/assets/111511618/99269129-f76d-4194-9bde-8fce10f98294)
 
