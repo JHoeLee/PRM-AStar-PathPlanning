@@ -14,12 +14,12 @@ Hi! This is a path planning project for Eureka Robotics take-home technical asse
 
 ## Framework
 ### Step 1: Generate Random Samples in Environment
-Random points in the environment were selected as nodes for the roadmap. Points within the obstacles are avoided. Default num_samples = 3000.
+Random points in the environment were selected as nodes for the roadmap. Points within the obstacles are avoided. **Default num_samples = 3000.**
 
 ![image](https://github.com/JHoeLee/PRM-AStar-PathPlanning/assets/111511618/19904b97-e1ce-4225-9ec7-8b697f86ab4a)
 
 ### Step 2: Build Roadmap
-Nearest neighbours of each node within a specified radius (default connection_radius = 0.5) are acquired with sklearn.neighbors. Nodes and its neighbours are joined together if they do not intersect with obstacles to form a complete roadmap.
+Nearest neighbours of each node within a specified radius (**default connection_radius = 0.5**) are acquired with sklearn.neighbors. Nodes and its neighbours are joined together if they do not intersect with obstacles to form a complete roadmap.
 
 ![image](https://github.com/JHoeLee/PRM-AStar-PathPlanning/assets/111511618/228c4de2-fffe-4cee-95f6-b2c6e5d43474)
 
@@ -34,7 +34,7 @@ If no path is found, the roadmap and its nodes will be displayed.
 ![image](https://github.com/JHoeLee/PRM-AStar-PathPlanning/assets/111511618/72e63589-2604-4def-8bdb-59ee92478783)
 
 ### Step 4: Post-Processing of Path
-The path is improved through 2 steps. First, unnecessary nodes are removed to ensure a straight route when needed. Then, random points in both directions are selected from a node and potentially joined, creating smoother curves at sharp path edges. This reduces total distance without sacrificing speed. The cost before and after this process is shown for comparison.
+The path is improved through 2 steps. First, unnecessary nodes are removed to ensure a straight route when needed. Then, random points in both directions are selected from a node and potentially joined, creating smoother curves at sharp path edges. This reduces total distance without sacrificing speed. **Orange - before post-processing, Green - after post-processing**. The cost before and after this process is shown for comparison.
 
 ![image](https://github.com/JHoeLee/PRM-AStar-PathPlanning/assets/111511618/71f02251-4c3a-41ad-9317-492371680d8c)
 ![image](https://github.com/JHoeLee/PRM-AStar-PathPlanning/assets/111511618/7dbf5a59-9859-4716-9d42-b441d39cf72b)
